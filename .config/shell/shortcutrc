@@ -1,0 +1,33 @@
+# vim: filetype=sh
+alias cac="cd /home/bubbles/.cache && ls -hNal --color=auto --group-directories-first" \
+cf="cd /home/bubbles/.config && ls -hNal --color=auto --group-directories-first" \
+D="cd /home/bubbles/Downloads && ls -hNal --color=auto --group-directories-first" \
+d="cd /home/bubbles/Documents && ls -hNal --color=auto --group-directories-first" \
+dt="cd /home/bubbles/.local/share && ls -hNal --color=auto --group-directories-first" \
+rr="cd /home/bubbles/.local/src && ls -hNal --color=auto --group-directories-first" \
+h="cd /home/bubbles && ls -hNal --color=auto --group-directories-first" \
+m="cd /home/bubbles/Music && ls -hNal --color=auto --group-directories-first" \
+mn="cd /mnt && ls -hNal --color=auto --group-directories-first" \
+pp="cd /home/bubbles/Pictures && ls -hNal --color=auto --group-directories-first" \
+sc="cd /home/bubbles/.local/bin && ls -hNal --color=auto --group-directories-first" \
+src="cd /home/bubbles/.local/src && ls -hNal --color=auto --group-directories-first" \
+vv="cd /home/bubbles/Videos && ls -hNal --color=auto --group-directories-first" \
+lg="cd /var/log && ls -hNal --color=auto --group-directories-first" \
+wp="cd /home/bubbles/Documents/wallpaper && ls -hNal --color=auto --group-directories-first" \
+wd="cd //home/bubbles/Documents/sandbox/temp && ls -hNal --color=auto --group-directories-first" \
+bf="$EDITOR /home/bubbles/.config/shell/bm-files" \
+bd="$EDITOR /home/bubbles/.config/shell/bm-dirs" \
+cfx="$EDITOR /home/bubbles/.config/x11/xresources" \
+cfb="$EDITOR ~/.local/src/dwmblocks/config.h" \
+cfv="$EDITOR /home/bubbles/.config/nvim/init.vim" \
+cfz="$EDITOR /home/bubbles/.config/zsh/.zshrc" \
+cfa="$EDITOR /home/bubbles/.config/shell/aliasrc" \
+cfp="$EDITOR /home/bubbles/.config/shell/profile" \
+cfm="$EDITOR /home/bubbles/.config/mutt/muttrc" \
+cfn="$EDITOR /home/bubbles/.config/newsboat/config" \
+cfu="$EDITOR /home/bubbles/.config/newsboat/urls" \
+cfmb="$EDITOR /home/bubbles/.config/ncmpcpp/bindings" \
+cfmc="$EDITOR /home/bubbles/.config/ncmpcpp/config" \
+cfl="$EDITOR /home/bubbles/.config/lf/lfrc" \
+cfL="$EDITOR /home/bubbles/.config/lf/scope" \
+cfX="$EDITOR /home/bubbles/.config/sxiv/exec/key-handler" \

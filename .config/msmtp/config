@@ -1,0 +1,12 @@
+account david@computerisms.ca
+host mail.computerisms.ca
+port 465
+from david@computerisms.ca
+user david@computerisms.ca
+passwordeval "pass david@computerisms.ca"
+auth on
+tls on
+tls_trust_file	/etc/ssl/certs/ca-certificates.crt
+logfile /home/bubbles/.cache/msmtp/msmtp.log
+tls_starttls off
+

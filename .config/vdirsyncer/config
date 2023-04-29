@@ -1,0 +1,107 @@
+[general]
+status_path = "/home/bubbles/.local/share/vdirsyncer/status/"
+
+# CardDAV
+# =======
+
+[pair computerisms_contacts]
+	a = "contacts_local"
+	b = "computerisms_contacts_remote"
+	collections = ["addresses"]
+	metadata = ["displayname"]
+	conflict_resolution = "b wins"
+
+[storage contacts_local]
+	type = "filesystem"
+	path = "/home/bubbles/.local/share/vdirsyncer/contacts/addressbook"
+	fileext = ".vcf"
+
+[storage computerisms_contacts_remote]
+	type = "carddav"
+	url = "https://cal.computerisms.ca/caldav.php/david@computerisms.ca/addresses"
+	username = "david@computerisms.ca"
+	password.fetch = ["command", "pass", "david@computerisms.ca"]
+
+
+# CalDAV
+# ======
+
+#  David's Calendar
+# ------------------
+
+[pair david_calendar]
+	a = "david_calendar_local"
+	b = "david_calendar_remote"
+	collections = ["calendar"]
+	metadata = ["displayname", "color"]
+	conflict_resolution = "a wins"
+
+[storage david_calendar_local]
+	type = "filesystem"
+	path = "/home/bubbles/.local/share/vdirsyncer/calendars/david/"
+	fileext = ".ics"
+
+[storage david_calendar_remote]
+	type = "caldav"
+	url = "https://cal.computerisms.ca/caldav.php/david@computerisms.ca/calendar"
+	username = "david@computerisms.ca"
+	password.fetch = ["command", "pass", "david@computerisms.ca"]
+
+
+#  Mohit's Calendar
+# ------------------
+
+ [pair mohit_calendar]
+ 	a = "mohit_calendar_local"
+	b = "mohit_calendar_remote"
+	collections = ["calendar"]
+	metadata = ["displayname", "color"]
+	conflict_resolution = "b wins"
+
+ [storage mohit_calendar_local]
+	type = "filesystem"
+	path = "/home/bubbles/.local/share/vdirsyncer/calendars/mohit"
+	fileext = ".ics"
+
+ [storage mohit_calendar_remote]
+	type = "caldav"
+	url = "https://cal.computerisms.ca/caldav.php/mohit@computerisms.ca/calendar"
+	username = "david@computerisms.ca"
+	password.fetch = ["command", "pass", "david@computerisms.ca"]
+
+
+#  Canadian Holidays
+# -------------------
+
+[pair Holiday_CA_calendar]
+	a = "Holiday_CA_calendar_local"
+	b = "Holiday_CA_calendar_remote"
+	collections = null
+	metadata = ["displayname", "color"]
+
+[storage Holiday_CA_calendar_local]
+	type = "filesystem"
+	path = "/home/bubbles/.local/share/vdirsyncer/calendars/ca_holiday/"
+	fileext = ".ics"
+
+[storage Holiday_CA_calendar_remote]
+	type = "http"
+	url = "https://canada-holidays.ca/ics"
+
+#  Yukon Holidays
+# ----------------
+
+[pair Holiday_YT_calendar]
+	a = "Holiday_YT_calendar_local"
+	b = "Holiday_YT_calendar_remote"
+	collections = null
+	metadata = ["displayname", "color"]
+
+[storage Holiday_YT_calendar_local]
+	type = "filesystem"
+	path = "/home/bubbles/.local/share/vdirsyncer/calendars/yt_holiday/"
+	fileext = ".ics"
+
+[storage Holiday_YT_calendar_remote]
+	type = "http"
+	url = "https://canada-holidays.ca/ics/YT"

@@ -1,0 +1,24 @@
+[calendars]
+
+[[Holiday_CA]]
+	path = ~/.local/share/vdirsyncer/calendars/ca_holiday/calendar/
+
+[[Holiday_YT]]
+	path = ~/.local/share/vdirsyncer/calendars/yt_holiday/calendar/
+
+[[david]]
+	path = ~/.local/share/vdirsyncer/calendars/david/calendar/
+
+[[mohit]]
+	path = ~/.local/share/vdirsyncer/calendars/mohit/calendar/
+	readonly = True
+
+[locale]
+	timeformat = %H:%M
+	dateformat = %d/%m/%Y
+	longdateformat = %d/%m/%Y
+	datetimeformat = %d/%m/%Y %H:%M
+	longdatetimeformat = %d/%m/%Y %H:%M
+
+[default]
+	default_calendar = 'david'
